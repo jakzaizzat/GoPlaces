@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+  resources :reviews
   resources :places
   root 'pages#home'
 
