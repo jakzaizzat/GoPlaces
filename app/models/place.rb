@@ -21,7 +21,6 @@ class Place < ActiveRecord::Base
 
 	def average_rating
 		self.reviews.sum(:score)/ reviews.size
-
 	rescue ZeroDivisionError
 		0
 	end
